@@ -1,0 +1,2 @@
+file /Users/glucia/Projects/CorAL/SConstruct,line 74:
+	Configure(confdir = .sconf_temp)
