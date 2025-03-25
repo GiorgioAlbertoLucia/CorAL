@@ -1,0 +1,7 @@
+# Parameters to initialise the p-He3 wave function
+double  DELQ        1.0
+int     NQMAX       800
+double  EPSILON     1.0
+bool    COULOMB     true
+bool    STRONG      false
+bool    IDENTICAL   false

@@ -1,0 +1,47 @@
+# File for the wavefunctin initialisation
+string wf_map_file /Users/glucia/Projects/CorAL/PHEMTO/input/wf_input.dat
+
+# Stuff to initialize the source we're going to use to build the correlation with
+string  source_file output/phemto_output_source.dat
+parameter_map source_settings {
+    #string  particle1           p
+    #string  particle2           He3
+    int     ndata               100
+    #bool    fixed_width_bins    true
+    #string  storage_directory   junkInDirectory
+    #int     lmax                4
+    int     nx                  50
+    int     ny                  50
+    int     nz                  50
+    double  dx                  0.5
+    double  dy                  0.5
+    double  dz                  0.5
+    double  xoffset             -0.5
+    double  yoffset             -0.5
+    double  zoffset             -0.5
+    double  RX                  4.2
+    double  RY                  4.2
+    double  RZ                  4.2  
+    int     nMcSamples          100000      
+}
+
+# Stuff to initialize the source we're going to use to build the correlation with
+string  correlation_file    /Users/glucia/Projects/CorAL/PHEMTO/output/phemto_output_CF.dat
+string  kstarNum_file       /Users/glucia/Projects/CorAL/PHEMTO/output/phemto_output_kstarNum.dat
+string  kstarX_file         /Users/glucia/Projects/CorAL/PHEMTO/output/phemto_output_kstarX.dat
+string  kstarY_file         /Users/glucia/Projects/CorAL/PHEMTO/output/phemto_output_kstarY.dat
+string  kstarZ_file         /Users/glucia/Projects/CorAL/PHEMTO/output/phemto_output_kstarZ.dat
+
+parameter_map kstar_settings {
+
+    bool    KSTAR_3DSIM         false # simulate the kx, ky, kz components of kstar
+    int     ndata               800
+    bool    fixed_width_bins    true
+    double  dx                  1
+    double  xoffset             0.5
+    bool    SIGNED_KSTAR        false
+    int     KSTAR_BINS          800
+    double  KSTAR_DELTA         1
+    double  KSTAR_MAX           800
+         
+}
