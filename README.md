@@ -1,6 +1,13 @@
 # PHEMTO: Proton-Helium-3 Femtoscopy  
 A model for computing the correlation function of a proton–Helium-3 (p–He3) system in PbPb collisions.
 
+### Added code
+Here are listed the relevant files added/modified compared to the current version of CorAL
+* include/wavefunction.h
+* src/coral/Wavefunctions/wavefunction.h
+* src/coral/Wavefunctions/wf/wf_pHe3_coulomb.cc
+* src/phemto/phemto.cc
+
 ### Requirements  
 - **ROOT** (only required for plotting)  
 
