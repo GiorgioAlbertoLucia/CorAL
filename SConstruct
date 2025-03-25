@@ -51,7 +51,7 @@ coralenv = Environment( \
     CPPPATH = [ '#include', '#src', gslpath+'include' ],\
     LIBPATH = [ '#lib', gslpath+'lib' ],\
     LIBS    = [ 'gsl', 'gslcblas' ],\
-    CCFLAGS = ccflags, \
+    CCFLAGS=ccflags + " -std=c++11",\
     LDFLAGS = '',\
     #ENV = \{'PATH':os.environ['PATH']\}\
 )
@@ -89,6 +89,7 @@ SConscript('src/shark/SConscript', exports='coralenv', variant_dir='#build/shark
 SConscript('src/bfplot/SConscript', exports='coralenv', variant_dir='#build/bfplot', duplicate=0)
 SConscript('src/scplot/SConscript', exports='coralenv', variant_dir='#build/scplot', duplicate=0)
 SConscript('src/converts2c/SConscript', exports='coralenv', variant_dir='#build/converts2c', duplicate=0)
+SConscript('src/phemto/SConscript', exports='coralenv', variant_dir='#build/phemto', duplicate=0)
 
 # --------------- Build regression tests ---------------
 if coralenv['tests']:

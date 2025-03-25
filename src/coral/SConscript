@@ -117,6 +117,7 @@ WaveFunctions/wf/wf_lambdalambda_phaseshift.cc \
 WaveFunctions/wf/wf_lambdalambdaantiparspin_phaseshift.cc \
 WaveFunctions/wf/wf_lambdalambdaparspin_phaseshift.cc \
 WaveFunctions/wf/wf_nn_phaseshift.cc \
+WaveFunctions/wf/wf_pHe3_coulomb.cc \
 WaveFunctions/wf/wf_pipluspiminus_phaseshift.cc \
 WaveFunctions/wf/wf_pipluspiminus_sqwell.cc \
 WaveFunctions/wf/wf_pipluspiplus_phaseshift.cc \

@@ -353,6 +353,17 @@ class	CWaveFunction_pp_schrod : public CWaveFunction{
   double Vreid(double r,int ichannel);
 };
 
+class CWaveFunction_pHe3_Coulomb : public CWaveFunction {
+public:
+    const double MHE3 = 2809.23;    // Helium-3 mass in MeV
+    const double MPROTON = 938.272; // Proton mass in MeV
+
+    CWaveFunction_pHe3_Coulomb(string parsfilename);
+    //~CWaveFunction_pHe3_Coulomb();
+    
+    double CalcPsiSquared(int iq, double r, double ctheta);
+};
+
 
 #endif
 
